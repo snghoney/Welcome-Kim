@@ -7,7 +7,7 @@ import requests
 import os
 
 app = Flask(__name__)
-client = os.environ.get("OPENAI_API_KEY")  # 최신 SDK 방식
+client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 NAVER_CLIENT_ID = "e195l6m7f3"
 NAVER_CLIENT_SECRET = "iY5sEBH7hzpX7uDke9fbPHdvUKchO3urUBVR5sCC"
 
